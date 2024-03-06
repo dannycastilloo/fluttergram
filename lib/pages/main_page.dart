@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_full_course/pages/home_page.dart';
+import 'package:flutter_full_course/pages/profile_page.dart';
 import 'package:flutter_svg/svg.dart';
 
 class MainPage extends StatefulWidget {
@@ -57,8 +58,6 @@ class _MainPageState extends State<MainPage> {
     Center(
       child: Text('Messages'),
     ),
-    Center(
-      child: Text('User'),
-    ),
+    ProfilePage()
   ];
 }

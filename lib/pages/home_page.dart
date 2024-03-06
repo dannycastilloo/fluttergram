@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_full_course/components/post_item.dart';
+import 'package:flutter_full_course/components/toolbar.dart';
 import 'package:flutter_full_course/styles/app_colors.dart';
 import 'package:flutter_full_course/styles/app_text.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({super.key});
@@ -13,14 +15,12 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     mockUsersFromServer();
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: AppColors.background,
-        elevation: 0,
-        foregroundColor: AppColors.white,
-        title: Text('Fluttergram'),
-        centerTitle: false,
+      appBar: Toolbar(
+        title: 'Fluttergram',
         actions: [
-          Icon(Icons.location_on_outlined),
+          IconButton(
+              onPressed: () {},
+              icon: SvgPicture.asset('assets/svg/location.svg'))
         ],
       ),
       body: ListView.separated(

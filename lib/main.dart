@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_full_course/pages/home_page.dart';
 import 'package:flutter_full_course/pages/login_page.dart';
 import 'package:flutter_full_course/pages/main_page.dart';
+import 'package:flutter_full_course/pages/profile_page.dart';
 import 'package:flutter_full_course/pages/test_page.dart';
 import 'package:flutter_full_course/styles/app_colors.dart';
 
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
           '/': (context) => LoginPage(),
           '/home': (context) => HomePage(),
           '/main': (context) => MainPage(),
+          '/profile': (context) => ProfilePage(),
         });
   }
 }
